@@ -37,7 +37,9 @@ diamonds_subset <- diamonds %>%
 ### to plot, summarize, calculate something simple using the diamonds
 ### dataset.
 
-
+diamonds_subset %>% 
+  group_by(color) %>% 
+  summarize(mean_price = mean(price, na.rm=TRUE))
 ```
 
 ## STEP 11: And even more merge conflicts!
