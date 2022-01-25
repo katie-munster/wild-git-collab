@@ -44,9 +44,6 @@ diamonds_subset %>%
 ## STEP 11: And even more merge conflicts!
 
 ```{r break-it-2}
-### Both partners - delete this comment, then write some code here
-### to plot, summarize, calculate something simple using the diamonds
-### dataset.
-
-
+ggplot(data = diamonds_subset, aes(x=price, y=table)) +
+  geom_point()
 ```
