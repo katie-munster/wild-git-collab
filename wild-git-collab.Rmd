@@ -36,7 +36,9 @@ diamonds_subset <- diamonds %>%
 ggplot(data = diamonds, aes(x = price, y = table)) +
   geom_point()
 
-
+diamonds_subset %>% 
+  group_by(color) %>% 
+  summarize(mean_price = mean(price, na.rm=TRUE))
 ```
 
 ## STEP 11: And even more merge conflicts!
